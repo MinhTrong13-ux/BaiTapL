@@ -1,0 +1,38 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.flex{
+    display: flex;
+
+}
+header{
+    background-color: rgb(199, 196, 255);
+    height: 15;
+    justify-content: space-between;
+}
+header>img{
+    width: 150px;
+}
+header>*{
+
+}
+nav{
+    background-color: darkblue;
+    color: white;
+}
+nav>ul>li{
+    list-style-type: none;
+    border-right: 2px solid white;
+    padding: 3px;
+}
+nav>ul>li:last-child{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+    font-size: 30;
+}
