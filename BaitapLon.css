@@ -11,7 +11,7 @@ header{
     justify-content: space-between;
 }
 header img{
-    width: 100%;
+    width: 150px;
 }
 header>h1{
     color: red;
