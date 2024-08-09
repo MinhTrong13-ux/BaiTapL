@@ -7,16 +7,15 @@
 }
 header{
     background-image: url(images/images\ \(1\).jfif);
-    height: 15;
+    height: 15%;
     justify-content: space-between;
 }
-header>img{
-    width: 150px;
+header img{
+    width: 100%;
 }
 header>h1{
     color: red;
     text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
-    font: Bold 52px Sketch_Block;
 }
 nav{
     background-color: darkblue;
