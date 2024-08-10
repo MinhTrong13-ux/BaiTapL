@@ -40,6 +40,50 @@ nav>ul>li>a:hover{
     font-size: 30;
 }
 /* CSS GIOI THIEU */
+.gt>b{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(237, 91, 23);
+}
+.p{
+    color: rgb(5, 5, 62);
+}
+
+.ghichu>div{
+    background: linear-gradient(rgb(28, 241, 174), rgb(104, 188, 209));
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+div>h5{
+    text-align: center;
+}
+div>img{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
+    border-radius: 10px;
+}
+div.noidungs{
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
+footer{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color:white;
+
+}
+h3{
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
+}
+ul{
+    list-style-type: none;
+}
+ul.icon>div{
+    border: 1px solid white;
+}
 
 /* CSS SAN PHAM */
 .search{
