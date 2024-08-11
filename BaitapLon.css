@@ -39,6 +39,31 @@ nav>ul>li>a:hover{
     color: red;
     font-size: 30;
 }
+.back-to-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 3px;
+    display: none;
+    background-color: lightgreen;
+    color: white;
+}
+@keyframes chuyendong{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+#xe{
+    position: absolute;
+    color: white;
+    animation: chuyendong 10s  linear infinite;
+}
+
 /* CSS GIOI THIEU */
 .gt>b{
     text-align: center;
@@ -122,7 +147,7 @@ footer{
     top:0;
     left:0;
     background-color: gold;
-    color: red;
+    color: white;
     border-radius: 10px 0;
 }
 .cars img{
@@ -134,4 +159,21 @@ footer{
 }
 .thumb{
     border: 2px solid darkblue;
+}
+@keyframes doimau{
+    0%{
+        background-color: gold;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: green;
+    }
+}
+.gia{
+    animation: doimau 2s infinite;
 }
