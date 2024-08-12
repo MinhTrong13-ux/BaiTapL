@@ -47,7 +47,7 @@ nav>ul>li>a:hover{
     border-radius: 50%;
     padding: 3px;
     display: none;
-    background-color: lightgreen;
+    background-color: rgb(26, 6, 239);
     color: white;
 }
 @keyframes chuyendong{
