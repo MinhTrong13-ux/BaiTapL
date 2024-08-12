@@ -58,7 +58,7 @@ nav>ul>li>a:hover{
         left: 100%;
     }
 }
-#xe{
+.xe{
     position: absolute;
     color: white;
     animation: chuyendong 10s  linear infinite;
@@ -137,6 +137,7 @@ footer{
     width: 25%;
     box-sizing: border-box;
     padding: 5px;
+    background: linear-gradient(gray,lightblue);
 }
 .car{
     position: relative;
@@ -176,4 +177,35 @@ footer{
 }
 .gia{
     animation: doimau 2s infinite;
+}
+#btbuy{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    border-radius: 0 10px;
+    display: none;
+}
+/* CSS BẢNG GIÁ */
+table{
+    border: 2px solid red;
+    background: gray;
+    border-collapse: collapse;
+    width: 100%;
+}
+thead{
+    background: darkblue;
+    color: white;
+    border: 2px solid red;
+    text-align: center;
+}
+thead th{
+    border-right: 2px solid red;
+}
+td{
+    border: 2px solid red;
+    text-align: center;
+    color: white;
 }
