@@ -39,4 +39,15 @@ $(document).ready(function() {
     { 
         $('#btbuy').fadeOut(300)
     });
+
+    let index = 0;
+
+    setInterval(function(){
+        index++;
+        if(index>$(".slider img").lenght)
+            index = 1;
+        
+        $(".slider img").hide();
+        $(`.slider img:nth-child(${index})`).show();
+    },1000);
 })

@@ -4,7 +4,7 @@
 }
 .flex{
     display: flex;
-
+    flex-wrap: wrap;
 }
 header{
     background-image: url(images/images\ \(1\).jfif);
@@ -103,8 +103,9 @@ main{
 .select>div>div>h2{
     text-align: center;
 }
-.select{
-    margin-bottom: 20px; 
+.select>div{
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 .ca1{
     width: 25%;
@@ -232,10 +233,10 @@ div.logos>div>h5{
     background: white;
     color: #302b63; 
 }
-
-
-
-
+.slider img{
+    width: 70%;
+    margin: 0 15%;    
+}
 /* CSS GIOI THIEU */
 .gt>b{
     text-align: center;
@@ -323,12 +324,16 @@ footer{
     color: white;
     border-radius: 10px 0;
 }
+#main{
+    width: 100%;
+}
 .cars img{
     width: 100%;
 }
 .thumb>div{
     width: 20%;
     border-right: 2px solid black;
+    box-sizing: border-box;
 }
 .thumb{
     border: 2px solid darkblue;
