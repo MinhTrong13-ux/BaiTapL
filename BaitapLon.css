@@ -18,7 +18,7 @@ header>h1{
     text-align: center;
     text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
 }
-nav{
+.menu{
     background-color: darkblue;
     color: white;
 }
@@ -26,6 +26,7 @@ nav>ul>li{
     list-style-type: none;
     border-right: 2px solid white;
     padding: 3px;
+    margin: 2px;
 }
 nav>ul>li:last-child{
     border-right: none;
@@ -235,7 +236,8 @@ div.logos>div>h5{
 }
 .slider img{
     width: 70%;
-    margin: 0 15%;    
+    margin: 2px 15%;   
+    display: block; 
 }
 /* CSS GIOI THIEU */
 .gt>b{
