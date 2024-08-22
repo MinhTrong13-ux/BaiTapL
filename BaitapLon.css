@@ -4,7 +4,7 @@
 }
 .flex{
     display: flex;
-
+    flex-wrap: wrap;
 }
 header{
     background-image: url(images/images\ \(1\).jfif);
@@ -18,7 +18,7 @@ header>h1{
     text-align: center;
     text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
 }
-nav{
+.menu{
     background-color: darkblue;
     color: white;
 }
@@ -26,6 +26,7 @@ nav>ul>li{
     list-style-type: none;
     border-right: 2px solid white;
     padding: 3px;
+    margin: 2px;
 }
 nav>ul>li:last-child{
     border-right: none;
@@ -103,8 +104,9 @@ main{
 .select>div>div>h2{
     text-align: center;
 }
-.select{
-    margin-bottom: 20px; 
+.select>div{
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 .ca1{
     width: 25%;
@@ -275,10 +277,11 @@ div.logos>div>h5{
     background: white;
     color: #302b63; 
 }
-
-
-
-
+.slider img{
+    width: 70%;
+    margin: 2px 15%;   
+    display: block; 
+}
 /* CSS GIOI THIEU */
 .gt>b{
     text-align: center;
@@ -366,12 +369,16 @@ footer{
     color: white;
     border-radius: 10px 0;
 }
+#main{
+    width: 100%;
+}
 .cars img{
     width: 100%;
 }
 .thumb>div{
     width: 20%;
     border-right: 2px solid black;
+    box-sizing: border-box;
 }
 .thumb{
     border: 2px solid darkblue;
