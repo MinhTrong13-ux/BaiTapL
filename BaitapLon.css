@@ -173,7 +173,7 @@ div.logos>div>h5{
 }
 .left{
     width: 60%;
-    border-right: 1px solid rgb(179, 172, 172);
+    
 }
 .right{
     width:40%;
@@ -193,8 +193,6 @@ div.logos>div>h5{
     color: rgb(7, 7, 67);
     text-shadow: 1px 1px rgb(11, 11, 199),2px 2px rgb(15, 123, 211);
 }
-
-
 .left>div>li>input{
     border: 1px solid black ;
     border-radius: 20px;
@@ -203,6 +201,51 @@ div.logos>div>h5{
     margin-bottom: 10px;
     margin-top:10px ;
 }
+.left>div>li.sub{
+    border: 1px solid grey;
+    margin-left: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    margin-bottom: 20px;
+}
+.left>li>ul>li{
+    list-style-type: none;    
+}
+.left a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+.sub>ul{
+    margin-top: 6px;
+}
+.sub>a{
+    color:black;
+}
+.sub>ul>li{
+    background: white;
+    width: 15%;
+    border:0.3px solid #b5b1af; 
+}
+.sub>ul>li>a{
+    color:black;
+}
+.sub>ul>li :hover{
+    background: rgb(231, 231, 224);
+    color:rgb(18, 5, 70);
+}
+.submenu{
+    display:none !important;
+    position: absolute;
+}
+.sub:hover .submenu{
+    display:block !important;
+}
+
+
+
 .left>div>li>button{
     border: 1px solid hsl(64, 88%, 50%);
     border-radius: 20px;
