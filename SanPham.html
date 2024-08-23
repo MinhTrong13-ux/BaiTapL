@@ -29,20 +29,57 @@
     <section class="search">
         <input type="search" placeholder="Tìm Kiếm Sản Phẩm..."/>
     </section>
+    <section id="form">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">MẪU ĐẶT CỌC XE</th>
+                </tr></thead>
+            <tbody id="NDform">
+              <tr>
+                <td>
+                    <h5>Họ và tên:</h5>
+                </td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><h5>Số CCCD:</h5></td>
+                <td><input type="number"></td>
+              </tr>
+              <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>Ngày đặt cọc:</td>
+                <td><input type="date"></td>
+              </tr>
+              <tr>
+                <td>Số tiền đặt cọc(bằng số):</td>
+                <td><input type="number"></td>
+              </tr>
+              <tr>
+                <td>Số tiền đặt cọc(bằng chữ):</td>
+                <td><input type="text"></td>
+              </tr>  
+            </tbody>
+        </table>
+        <input id="submitform" type="submit" value="Gửi">
+    </section>
     <section class="details flex">
         <div class="cars">
             <div class="car">
-                <img id="main" src="images/Black_1.jfif" alt="Xpander">
+                <img id="main-1" src="images/Black_1.jfif" alt="Xpander">
                 <button id="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
                 <p>Xe Mitsubishi Xpander 1.5 AT 2021</p>
                 <div class="gia">570.000.000<sup>vnd</sup></div>
             </div>
             <div class="thumb flex">
-                    <div><img src="images/Black_1.jfif" alt="Xpander"></div>
-                    <div><img src="images/Black_2.jfif" alt="Xpander"></div>
-                    <div><img src="images/Black_3.jfif" alt="Xpander"></div>
-                    <div><img src="images/Black_4.jfif" alt="Xpander"></div>
-                    <div><img src="images/Black_5.jfif" alt="Xpander"></div>
+                    <div><img src="images/Black_1.jfif" alt="Xpander" rel="1"></div>
+                    <div><img src="images/Black_2.jfif" alt="Xpander" rel="1"></div>
+                    <div><img src="images/Black_3.jfif" alt="Xpander" rel="1"></div>
+                    <div><img src="images/Black_4.jfif" alt="Xpander" rel="1"></div>
+                    <div><img src="images/Black_5.jfif" alt="Xpander" rel="1"></div>
             </div>
             <div class="colorCar flex">
                 <button></button>
@@ -59,10 +96,10 @@
                 <div class="gia">1.979.000.000<sup>vnd</sup></div>
             </div>
             <div class="thumb flex">
-                <div><img src="images/BMWW-1.jpg" alt="BMW"></div>
-                <div><img src="images/BMWW-2.jpg" alt="BMW"></div>
-                <div><img src="images/BMWW-3.jpg" alt="BMW"></div>
-                <div><img src="images/BMWW-4.jpg" alt="BMW"></div>
+                <div><img src="images/BMWW-1.jpg" alt="BMW" rel="2"></div>
+                <div><img src="images/BMWW-2.jpg" alt="BMW" rel="2"></div>
+                <div><img src="images/BMWW-3.jpg" alt="BMW" rel="2"></div>
+                <div><img src="images/BMWW-4.jpg" alt="BMW" rel="2"></div>
             </div>
             <div class="colorCar">
             
@@ -78,11 +115,11 @@
                     <div class="gia">7.620.000.000<sup>vnd</sup></div>
                 </div>
                 <div class="thumb flex">
-                <div><img src="images/Carrera-Green_1.jpg" alt="CARR"></div>
-                <div><img src="images/Carrera-Green_2.jpg" alt="CARR"></div>
-                <div><img src="images/Carrera-Green_3.jpg" alt="CARR"></div>
-                <div><img src="images/Carrera-Green_4.jpg" alt="CARR"></div>
-                <div><img src="images/Carrera-Green_5.jpg" alt="CARR"></div>
+                <div><img src="images/Carrera-Green_1.jpg" alt="CARR" rel="3"></div>
+                <div><img src="images/Carrera-Green_2.jpg" alt="CARR" rel="3"></div>
+                <div><img src="images/Carrera-Green_3.jpg" alt="CARR" rel="3"></div>
+                <div><img src="images/Carrera-Green_4.jpg" alt="CARR" rel="3"></div>
+                <div><img src="images/Carrera-Green_5.jpg" alt="CARR" rel="3"></div>
                 </div>
                 <div class="colorCar">
                 
@@ -98,9 +135,9 @@
                     <div class="gia">1.319.000.000<sup>vnd</sup></div>
                 </div>
                 <div class="thumb flex">
-                    <div><img src="images/H-White_1.jpg" alt="H"></div>
-                    <div><img src="images/H-White_2.jpg" alt="H"></div>
-                    <div><img src="images/H-White_3.jpg" alt="H"></div>
+                    <div><img src="images/H-White_1.jpg" alt="H" rel="4"></div>
+                    <div><img src="images/H-White_2.jpg" alt="H" rel="4"></div>
+                    <div><img src="images/H-White_3.jpg" alt="H" rel="4"></div>
                 </div>
                 <div class="colorCar">
                 
@@ -116,11 +153,11 @@
                     <div class="gia">1.709.000.000<sup>vnd</sup></div>
                 </div>
                 <div class="thumb flex">
-                    <div><img src="images/Mec-Red_1.jpg" alt="MEC"></div>
-                    <div><img src="images/Mec-Red_2.jpg" alt="MEC"></div>
-                    <div><img src="images/Mec-Red_3.jpg" alt="MEC"></div>
-                    <div><img src="images/Mec-Red_4.jpg" alt="MEC"></div>
-                    <div><img src="images/Mec-Red_5.jpg" alt="MEC"></div>
+                    <div><img src="images/Mec-Red_1.jpg" alt="MEC" rel="5"></div>
+                    <div><img src="images/Mec-Red_2.jpg" alt="MEC" rel="5"></div>
+                    <div><img src="images/Mec-Red_3.jpg" alt="MEC" rel="5"></div>
+                    <div><img src="images/Mec-Red_4.jpg" alt="MEC" rel="5"></div>
+                    <div><img src="images/Mec-Red_5.jpg" alt="MEC" rel="5"></div>
                 </div>
                 <div class="colorCar">
                 
@@ -135,9 +172,9 @@
                     <div class="gia">1.890.000.000<sup>vnd</sup></div>
                 </div>
                 <div class="thumb flex">
-                    <div><img src="images/A-Red_1.jpg" alt="A"></div>
-                    <div><img src="images/A-Red_2.jpg" alt="A"></div>
-                    <div><img src="images/A-Red_3.jpg" alt="A"></div>
+                    <div><img src="images/A-Red_1.jpg" alt="A" rel="6"></div>
+                    <div><img src="images/A-Red_2.jpg" alt="A" rel="6"></div>
+                    <div><img src="images/A-Red_3.jpg" alt="A" rel="6"></div>
                     <div><img src="" alt=""></div>
                     <div><img src="" alt=""></div>
                 </div>
@@ -154,9 +191,9 @@
                     <div class="gia">766.000.000<sup>vnd</sup></div>
                 </div>
                 <div class="thumb flex">
-                    <div><img src="images/B-Black_1.jpg" alt="B"></div>
-                    <div><img src="images/B-Black_2.jpg" alt="B"></div>
-                    <div><img src="images/B-Black_3.jpg" alt="B"></div>
+                    <div><img src="images/B-Black_1.jpg" alt="B" rel="7"></div>
+                    <div><img src="images/B-Black_2.jpg" alt="B" rel="7"></div>
+                    <div><img src="images/B-Black_3.jpg" alt="B" rel="7"></div>
                     <div><img src="" alt=""></div>
                     <div><img src="" alt=""></div>
                 </div>
@@ -172,11 +209,11 @@
                 <div class="gia">5.340.000.000<sup>vnd</sup></div>
             </div>
             <div class="thumb flex">
-                <div><img src="images/Porsche-Blue_1.jpg" alt="por"></div>
-                <div><img src="images/Porsche-Blue_2.jpg" alt="por"></div>
-                <div><img src="images/Porsche-Blue_3.jpg" alt="por"></div>
-                <div><img src="images/Porsche-Blue_4.jpg" alt="por"></div>
-                <div><img src="images/Porsche-Blue_5.jpg" alt="por"></div>
+                <div><img src="images/Porsche-Blue_1.jpg" alt="por" rel="8"></div>
+                <div><img src="images/Porsche-Blue_2.jpg" alt="por" rel="8"></div>
+                <div><img src="images/Porsche-Blue_3.jpg" alt="por" rel="8"></div>
+                <div><img src="images/Porsche-Blue_4.jpg" alt="por" rel="8"></div>
+                <div><img src="images/Porsche-Blue_5.jpg" alt="por" rel="8"></div>
             </div>
             <div class="colorCar">
             
@@ -184,20 +221,20 @@
         </div>
         <div class="cars">
             <div class="car">
-            <img id="main-9" src="images/S-Black_1.jpg" alt="S">
-            <button id="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-            <p>Suzuki Swift GLX 2022</p>
-            <div class="gia">560.000.000<sup>vnd</sup></div>
+                <img id="main-9" src="images/S-Black_1.jpg" alt="S">
+                <button id="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                <p>Suzuki Swift GLX 2022</p>
+                <div class="gia">560.000.000<sup>vnd</sup></div>
+            </div>
+            <div class="thumb flex">
+                <div><img src="images/S-Black_1.jpg" alt="S" rel="9"></div>
+                <div><img src="images/S-Black_2.jpg" alt="S" rel="9"></div>
+                <div><img src="images/S-Black_3.png" alt="S" rel="9"></div>
+            </div>
+            <div class="colorCar">
+            
+            </div>
         </div>
-        <div class="thumb flex">
-            <div><img src="images/S-Black_1.jpg" alt="S"></div>
-            <div><img src="images/S-Black_2.jpg" alt="S"></div>
-            <div><img src="images/S-Black_3.png" alt="S"></div>
-        </div>
-        <div class="colorCar">
-        
-        </div>
-    </div>
     </section>
    </main>
 </body>

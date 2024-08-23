@@ -353,12 +353,17 @@ footer{
 .search{
     margin-bottom: 10px;
 }
+#form{
+    display: none;
+}
 .cars{
     width: 25%;
     box-sizing: border-box;
     padding: 5px;
     background-image: url(images/images.jfif);
-    height: 300px;
+}
+#main{
+    width: 100%;
 }
 .cars:hover{
     box-shadow: 0 4px 8px 3px;
@@ -414,24 +419,22 @@ footer{
     border-radius: 0 10px;
     display: none;
 }
+
 /* CSS BẢNG GIÁ */
 table{
-    border: 2px solid red;
-    background: gray;
+    border: 2px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 thead{
     background: darkblue;
     color: white;
-    border: 2px solid red;
-    text-align: center;
+    border: 2px solid black;
 }
 thead th{
-    border-right: 2px solid red;
+    border-right: 2px solid black;
 }
 td{
-    border: 2px solid red;
-    text-align: center;
-    color: white;
+    border: 2px solid black;
+    color: black;
 }

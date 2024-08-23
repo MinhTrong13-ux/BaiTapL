@@ -1,12 +1,14 @@
 window.onload=function()
 {
-    let main= document.getElementById("main");
     let images = document.querySelectorAll(".thumb img");
+    let btbuy = document.getElementById('btbuy')
     for(let im of images)
     im.onclick=function()
     {
+        let pos = this.getAttribute('rel');
+        let main= document.getElementById(`main-${pos}`);
         main.src = this.src;
-    }
+    };
     let nav = document.querySelector("ul.menu")
     window.onscroll = function() {
         if (this.scrollY >= 50) {
@@ -20,6 +22,7 @@ window.onload=function()
         }
             
     }
+    
     let search = document.querySelector("input[type=search]");
     search.onchange = function() {
         // xóa border
@@ -37,6 +40,7 @@ window.onload=function()
     }
 }
 $(document).ready(function() {
+    // co dinh menu
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) { 
             $('.back-to-top').fadeIn();
@@ -48,9 +52,7 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
     });
-})
-    $(document).ready(function()
-{
+    //nut dat coc
     $('.car').hover(function()
 {
     $('#btbuy').fadeIn(300)},
@@ -58,7 +60,7 @@ $(document).ready(function() {
     { 
         $('#btbuy').fadeOut(300)
     });
-
+ //slider
     $(".slider > div:not(:first-child)").hide();
     let current = 1;
     setInterval(function() {
