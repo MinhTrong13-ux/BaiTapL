@@ -357,7 +357,12 @@ footer{
     width: 25%;
     box-sizing: border-box;
     padding: 5px;
-    background: linear-gradient(gray,lightblue);
+    background-image: url(images/images.jfif);
+    height: 300px;
+}
+.cars:hover{
+    box-shadow: 0 4px 8px 3px;
+    transform: translateY(-10px);
 }
 .car{
     position: relative;
@@ -370,9 +375,6 @@ footer{
     background-color: gold;
     color: white;
     border-radius: 10px 0;
-}
-#main{
-    width: 100%;
 }
 .cars img{
     width: 100%;
