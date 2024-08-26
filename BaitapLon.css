@@ -406,6 +406,17 @@ footer{
         background-color: green;
     }
 }
+@keyframes mauborder{
+    from{
+        border:2px solid black;
+    }
+    to{
+        border: 5px solid red;
+    }
+}
+.doiMauBorder{
+    animation: mauborder 1s infinite;
+}
 .gia{
     animation: doimau 2s infinite;
 }
@@ -419,7 +430,12 @@ footer{
     border-radius: 0 10px;
     display: none;
 }
-
+.colorCar>*{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
 /* CSS BẢNG GIÁ */
 table{
     border: 2px solid black;

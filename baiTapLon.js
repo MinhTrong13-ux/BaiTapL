@@ -2,12 +2,21 @@ window.onload=function()
 {
     let images = document.querySelectorAll(".thumb img");
     let btbuy = document.getElementById('btbuy')
+    let buttons = document.querySelectorAll(".colorCar > button");
     for(let im of images)
     im.onclick=function()
     {
         let pos = this.getAttribute('rel');
         let main= document.getElementById(`main-${pos}`);
         main.src = this.src;
+        for(let b of buttons)
+            b.onclick=function()
+        {
+            let label = this.getAttribute("rel");
+            main.src=`images/${label}_1.jpg`;
+            for(let i = 0;i<images.length;i++)
+                images[i].src=`images/${label}_${i+1}.jpg`;
+        };
     };
     let nav = document.querySelector("ul.menu")
     window.onscroll = function() {
@@ -25,18 +34,18 @@ window.onload=function()
     
     let search = document.querySelector("input[type=search]");
     search.onchange = function() {
-        // xóa border
+        // xóa hieu ung
         let tmps = document.querySelectorAll(".car");
         for (let t of tmps)
-            t.style.border= "";
+            t.classList.remove('doiMauBorder');
 
-        // gắn border product tìm thấy
+        // gan hieu ung khi tim thay
         let txt = this.value;
 
         let products = document.querySelectorAll(".car>P ");
         for (let p of products)
             if (p.innerText.includes(txt) === true)
-                p.parentElement.style.border = "2px solid red";
+            p.parentElement.classList.add('doiMauBorder');
     }
 }
 $(document).ready(function() {
@@ -53,13 +62,13 @@ $(document).ready(function() {
         return false;
     });
     //nut dat coc
-    $('.car').hover(function()
-{
-    $('#btbuy').fadeIn(300)},
-    function()
-    { 
-        $('#btbuy').fadeOut(300)
-    });
+//     $('.car').hover(function()
+// {
+//     $('#btbuy').fadeIn(300)},
+//     function()
+//     { 
+//         $('#btbuy').fadeOut(300)
+//     });
  //slider
     $(".slider > div:not(:first-child)").hide();
     let current = 1;
