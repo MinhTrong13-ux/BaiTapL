@@ -3,6 +3,7 @@ window.onload=function()
     let images = document.querySelectorAll(".thumb img");
     let btbuy = document.getElementById('btbuy')
     let buttons = document.querySelectorAll(".colorCar > button");
+    //Doi hinh
     for(let im of images)
     im.onclick=function()
     {
@@ -12,8 +13,8 @@ window.onload=function()
         for(let b of buttons)
             b.onclick=function()
         {
-            let label = this.getAttribute("rel");
-            main.src=`images/${label}_1.jpg`;
+            let label = this.getAttribute('rel');
+             main.src=`images/${label}_1.jpg`;
             for(let i = 0;i<images.length;i++)
                 images[i].src=`images/${label}_${i+1}.jpg`;
         };
