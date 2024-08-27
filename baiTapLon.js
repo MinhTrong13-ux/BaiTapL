@@ -3,22 +3,34 @@ window.onload=function()
     let images = document.querySelectorAll(".thumb img");
     let btbuy = document.getElementById('btbuy')
     let buttons = document.querySelectorAll(".colorCar > button");
+    let img=[0,1,2,3,4,5];
     //Doi hinh
     for(let im of images)
     im.onclick=function()
     {
-        let pos = this.getAttribute('rel');
+        let pos = this.getAttribute("rel");
         let main= document.getElementById(`main-${pos}`);
         main.src = this.src;
         for(let b of buttons)
             b.onclick=function()
         {
-            let label = this.getAttribute('rel');
-             main.src=`images/${label}_1.jpg`;
-            for(let i = 0;i<images.length;i++)
-                images[i].src=`images/${label}_${i+1}.jpg`;
+            let label = this.getAttribute("rel");
+             main.src=`images/${label}1.jpg`;
+            for(let i = 0;i<img.length;i++)
+                images[i].src=`images/${label}${i+1}.jpg`;
         };
     };
+    function ChangeColor(){
+        let list = document.querySelectorAll('.details>.cars')
+            for(let element of list){
+                let colorBtns = document.querySelectorAll(`.${element.getAttribute('class')} .colorCar>button`)
+                for(let colorBtn of colorBtns){
+                    colorBtn.onclick = function(){
+                        console.log(this.getAttribute('rel'))
+                    }
+                }
+            }
+    }
     let nav = document.querySelector("ul.menu")
     window.onscroll = function() {
         if (this.scrollY >= 50) {
