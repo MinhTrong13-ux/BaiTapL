@@ -3,7 +3,8 @@ window.onload=function()
     let images = document.querySelectorAll(".thumb img");
     let btbuy = document.getElementById('btbuy')
     let buttons = document.querySelectorAll(".colorCar > button");
-    let img=[0,1,2,3,4,5];
+    let main2= document.querySelectorAll(".car img");
+    let img =[0,1,2,3,4];
     //Doi hinh
     for(let im of images)
     im.onclick=function()
@@ -20,17 +21,6 @@ window.onload=function()
                 images[i].src=`images/${label}${i+1}.jpg`;
         };
     };
-    function ChangeColor(){
-        let list = document.querySelectorAll('.details>.cars')
-            for(let element of list){
-                let colorBtns = document.querySelectorAll(`.${element.getAttribute('class')} .colorCar>button`)
-                for(let colorBtn of colorBtns){
-                    colorBtn.onclick = function(){
-                        console.log(this.getAttribute('rel'))
-                    }
-                }
-            }
-    }
     let nav = document.querySelector("ul.menu")
     window.onscroll = function() {
         if (this.scrollY >= 50) {
@@ -60,6 +50,8 @@ window.onload=function()
             if (p.innerText.includes(txt) === true)
             p.parentElement.classList.add('doiMauBorder');
     }
+    //mau dat coc
+    
 }
 $(document).ready(function() {
     // co dinh menu
@@ -74,14 +66,6 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
     });
-    //nut dat coc
-//     $('.car').hover(function()
-// {
-//     $('#btbuy').fadeIn(300)},
-//     function()
-//     { 
-//         $('#btbuy').fadeOut(300)
-//     });
  //slider
     $(".slider > div:not(:first-child)").hide();
     let current = 1;

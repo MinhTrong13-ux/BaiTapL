@@ -420,7 +420,7 @@ footer{
 .gia{
     animation: doimau 2s infinite;
 }
-#btbuy{
+.btbuy{
     background-color: blue;
     color: white;
     width: 150px;
@@ -429,6 +429,9 @@ footer{
     right: 0;
     border-radius: 0 10px;
     display: none;
+}
+.car:hover .btbuy{
+    display: block;
 }
 .colorCar>*{
     width: 50px;
