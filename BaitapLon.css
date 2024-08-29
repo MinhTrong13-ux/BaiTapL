@@ -353,8 +353,10 @@ footer{
 .search{
     margin-bottom: 10px;
 }
-#form{
-    display: none;
+
+#submitform{
+    background-color: darkblue;
+    color: white;
 }
 .cars{
     width: 25%;
@@ -439,8 +441,24 @@ footer{
     margin-right: 5px;
     margin-top: 2px;
 }
+#form table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 60%;
+}
+#form table>thead{
+    background-color: darkblue;
+    color: white;
+}
+#NDform td{
+    border: 2px solid black;
+    color: black;
+}
+.showForm{
+    display: block !important;
+}
 /* CSS BẢNG GIÁ */
-table{
+/* table{
     border: 2px solid black;
     border-collapse: collapse;
     width: 100%;
@@ -456,4 +474,4 @@ thead th{
 td{
     border: 2px solid black;
     color: black;
-}
+} */

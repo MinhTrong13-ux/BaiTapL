@@ -1,9 +1,7 @@
 window.onload=function()
 {
     let images = document.querySelectorAll(".thumb img");
-    let btbuy = document.getElementById('btbuy')
     let buttons = document.querySelectorAll(".colorCar > button");
-    let main2= document.querySelectorAll(".car img");
     let img =[0,1,2,3,4];
     //Doi hinh
     for(let im of images)
@@ -33,7 +31,7 @@ window.onload=function()
             nav.style.position = 'initial';
         }
             
-    }
+    };
     
     let search = document.querySelector("input[type=search]");
     search.onchange = function() {
@@ -49,9 +47,13 @@ window.onload=function()
         for (let p of products)
             if (p.innerText.includes(txt) === true)
             p.parentElement.classList.add('doiMauBorder');
-    }
+    };
     //mau dat coc
-    
+    let btbuy = document.getElementsByClassName("btbuy");
+    let form = document.getElementById("form");
+    btbuy.onclick=function(){
+        form.classList.add('showForm');
+    };
 }
 $(document).ready(function() {
     // co dinh menu
