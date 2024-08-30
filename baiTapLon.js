@@ -49,10 +49,23 @@ window.onload=function()
             p.parentElement.classList.add('doiMauBorder');
     };
     //mau dat coc
-    let btbuy = document.getElementsByClassName("btbuy");
+    let btbuys = document.querySelectorAll('.btbuy')
     let form = document.getElementById("form");
-    btbuy.onclick=function(){
-        form.classList.add('showForm');
+    for(bt of btbuys){
+        bt.onclick=function(){
+            form.classList.add('showForm');
+        }
+    };
+    let childform = document.getElementsByClassName(".childform");
+    let submitform = document.getElementById("submitform");
+    submitform.onclick=function(){
+        form.style.display='none';
+    };
+    let btclose = document.getElementById("btclose");
+    btclose.onclick=function(){
+        if (confirm("Bạn chắc chắn đóng không?") === true){
+        form.classList.toggle('showForm');
+        };
     };
 }
 $(document).ready(function() {

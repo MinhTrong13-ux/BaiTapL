@@ -355,7 +355,17 @@ footer{
 .search{
     margin-bottom: 10px;
 }
-
+#form{
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+#btclose{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #submitform{
     background-color: darkblue;
     color: white;
@@ -446,7 +456,7 @@ footer{
 #form table{
     border: 2px solid black;
     border-collapse: collapse;
-    width: 60%;
+    width: 100%;
 }
 #form table>thead{
     background-color: darkblue;
