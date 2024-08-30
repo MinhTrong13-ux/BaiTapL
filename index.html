@@ -20,7 +20,12 @@
             <i style="position: absolute;color: black;" class="xe fa-sharp-duotone fa-solid fa-car-side"></i>
     <nav>
         <ul class="menu flex">
-            <li><a href="index.html">Trang Chủ</a></li>
+            <li class="mxbx"><a href="index.html">Trang Chủ</a>
+                <ul class="sub-menu">
+                    <li><a href="#mbs">Mua xe</a></li>
+                    <li><a href="#bxs">Bán xe</a></li>
+                </ul>
+            </li>
             <li><a href="GioiThieu.html">Giới Thiệu</a></li>
             <li><a href="SanPham.html">Sản Phẩm</a></li>
             <li><a href="BangGia.html">Bảng Giá</a></li>
@@ -33,7 +38,7 @@
             <div><img src="images/PT-2.jpg" alt="poster"/></div>
            <div><img src="images/PT-3.jpg" alt="poster"/></div> 
         </section>
-        <section class="mbs ">
+        <section class="mbs " id="mbs">
             <div class="text">
                 <h2>Mua xe</h2>
                 <input type="text" placeholder="Tìm kiếm bằng nhãn hiệu, mẫu xe hoặc từ khóa"/>
@@ -125,7 +130,7 @@
                 </div>
             </div>       
         </section>
-        <section class="bxs ">
+        <section class="bxs " id="bxs">
         <h2>Bán xe</h2>
         <div class="bx flex">
             <div class="left ">
@@ -135,7 +140,7 @@
                    <li><input type="email" placeholder="Nhập email"/></li>
                    <li class="sub">
                         <a href="#">Chọn hãng xe</a>
-                            <ul class="left submenu">
+                            <ul class=" submenu">
                                 <li><a>Mitsubishi</a></li>
                                 <li><a>Toyota</a></li>
                                 <li><a>Ford</a></li>
@@ -148,7 +153,7 @@
                                 <li><a>Vinfast</a></li>
                             </ul>
                         </li>
-                   <li><button>Gửi thông tin</button></li>
+                   <li><button><a href="FormDatCoc.html">Gửi thông tin</a></button></li>
                 </div>
                 <p></p>
             </div>

@@ -94,3 +94,9 @@ $(document).ready(function() {
         
     },4000);
 })
+$("nav ul.menu a").click(function(){
+    var h= $(this).attr("href")
+    $("html, body").animate({
+        scrollTop:$(h).prop("offsetTop")+"px"
+    },1000)
+})

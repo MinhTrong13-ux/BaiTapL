@@ -19,13 +19,13 @@ header>h1{
     text-shadow: 1px 1px #FF8040, 2px 2px #FF8040, 3px 3px #FF8040;
 }
 .menu{
-    background-color: darkblue;
+    background-color: blue;
     color: white;
 }
 nav>ul>li{
     list-style-type: none;
     border-right: 2px solid white;
-    padding: 3px;
+    padding: 10px;
     margin: 2px;
 }
 nav>ul>li:last-child{
@@ -63,6 +63,35 @@ nav>ul>li>a:hover{
     position: absolute;
     color: white;
     animation: chuyendong 10s  linear infinite;
+}
+.menu>li{
+    position: relative;
+}
+.mxbx>li{
+    width: 100%;
+    display: block;
+}
+.mxbx>ul{
+    z-index: 9999;
+}
+.mxbx>ul.sub-menu>li>a{
+    text-decoration: none;
+    display: block;
+}
+.mxbx>ul>li>a{
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+.mxbx>ul>li>a:hover{
+    color:red
+}
+.sub-menu{
+    display:none ;
+    position: absolute;
+    background:blue;
+}
+.mxbx:hover .sub-menu{
+    display:block ;
 }
 /*INDEX*/
 main{
@@ -153,8 +182,8 @@ main{
     height: 100%;
     flex: auto;
 }
-div.select>div>div:hover{
-    background: rgb(252, 250, 250);
+div.select>div>div:hover{  
+    opacity: 0.5;
 }
 .logos{
     width: 9.6%;
@@ -212,42 +241,37 @@ div.logos>div>h5{
 }
 .left>div>li.sub{
     border: 1px solid grey;
-    margin-left: 1rem;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 5px;
     width: 20%;
     margin-bottom: 20px;
 }
 .left>li>ul>li{
-    list-style-type: none;    
+    list-style-type: none; 
+    width: 100%; 
+}
+.sub>ul{
+    z-index: 9999;
+    margin-top: 0;
+    border-radius: 10px;
 }
 .left a{
     text-decoration: none;
     display: block;
-    padding: 5px;
-    text-align: center;
+    padding: 5px 5px 5px 5px; 
+    margin: 4px 4px 4px 4px;
 }
-.sub>ul{
-    margin-top: 6px;
+.left>div>li{
+    position: relative;
 }
-.sub>a{
-    color:black;
-}
-.sub>ul>li{
-    background: white;
-    width: 15%;
-    border:0.3px solid #b5b1af; 
-}
-.sub>ul>li>a{
-    color:black;
-}
+
 .sub>ul>li :hover{
     background: rgb(231, 231, 224);
-    color:rgb(18, 5, 70);
+    color:rgb(32, 10, 118);
 }
 .submenu{
     display:none ;
     position: absolute;
+    background: rgb(200, 230, 241);
 }
 .sub:hover .submenu{
     display:block ;
@@ -487,3 +511,13 @@ td{
     border: 2px solid black;
     color: black;
 } */
+ /*FormDatCoc*/
+.froms{
+    background: rgb(228, 239, 249);
+    border: 1px solid rgb(208, 199, 199);
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.from{
+    border-radius: 10px;
+}
