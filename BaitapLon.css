@@ -379,6 +379,14 @@ footer{
 .search{
     margin-bottom: 10px;
 }
+.search>input{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
 #form{
     display: none;
     position: relative;
