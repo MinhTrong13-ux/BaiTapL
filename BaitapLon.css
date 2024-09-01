@@ -38,7 +38,7 @@ nav>ul>li>a{
 }
 nav>ul>li>a:hover{
     color: red;
-    font-size: 30;
+    font-size: 20px;
 }
 .back-to-top{
     position: fixed;
@@ -50,6 +50,7 @@ nav>ul>li>a:hover{
     display: none;
     background-color: rgb(26, 6, 239);
     color: white;
+    z-index: 1000;
 }
 @keyframes chuyendong{
     from{
@@ -520,7 +521,7 @@ footer{
     background-color: darkblue;
 }
 /* CSS BẢNG GIÁ */
-/* table{
+table{
     border: 2px solid black;
     border-collapse: collapse;
     width: 100%;
@@ -536,7 +537,7 @@ thead th{
 td{
     border: 2px solid black;
     color: black;
-} */
+}
  /*FormDatCoc*/
 .froms{
     background: rgb(228, 239, 249);
