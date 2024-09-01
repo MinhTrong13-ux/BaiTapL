@@ -2,7 +2,7 @@ window.onload=function()
 {
     let images = document.querySelectorAll(".thumb img");
     let buttons = document.querySelectorAll(".colorCar > button");
-    let img =[0,1,2,3,4];
+    let arr =[0,1,2,3,4];
     //Doi hinh
     for(let im of images)
     im.onclick=function()
@@ -10,14 +10,18 @@ window.onload=function()
         let pos = this.getAttribute("rel");
         let main= document.getElementById(`main-${pos}`);
         main.src = this.src;
-        for(let b of buttons)
-            b.onclick=function()
-        {
-            let label = this.getAttribute("rel");
-             main.src=`images/${label}1.jpg`;
-            for(let i = 0;i<img.length;i++)
-                images[i].src=`images/${label}${i+1}.jpg`;
-        };
+    };
+    for(let b of buttons)
+        b.onclick=function()
+    {
+        let pos2 =this.getAttribute("rel");
+        let main2 = document.getElementById(`main-${pos2}`);
+        let label = this.getAttribute("name");
+        let img2=document.querySelectorAll(`img-${pos2}`);
+        //let images2 = document.querySelectorAll("img2");
+        main2.src=`images/${label}1.jpg`;
+        for(let i = 0;i<img2.length;i++)
+            img2[i].src=`images/${label}${i+1}.jpg`;
     };
     let nav = document.querySelector("ul.menu")
     window.onscroll = function() {
@@ -93,10 +97,21 @@ $(document).ready(function() {
         });
         
     },4000);
+    $(".tab-content > section:not(:first-child)").hide();
+    $(".tab > li > a").click(function() {
+        event.preventDefault();
+        $(".tab > li").removeClass("active");
+        $(this).parent().addClass("active");
+
+        let href = $(this).attr("href");
+        $(".tab-content > section").hide();
+        $(href).show();
+    });
+    $("nav ul.menu a").click(function(){
+        var h= $(this).attr("href")
+        $("html, body").animate({
+            scrollTop:$(h).prop("offsetTop")+"px"
+        },1000)
+    });
 })
-$("nav ul.menu a").click(function(){
-    var h= $(this).attr("href")
-    $("html, body").animate({
-        scrollTop:$(h).prop("offsetTop")+"px"
-    },1000)
-})
+

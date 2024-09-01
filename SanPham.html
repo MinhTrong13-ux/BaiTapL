@@ -35,7 +35,7 @@
     <section class="search">
         <input type="search" placeholder="Tìm Kiếm Sản Phẩm..."/>
     </section>
-    <form id="form">
+     <form id="form">
         <table>
             <thead>
                 <tr>
@@ -82,184 +82,383 @@
         <input type="submit" id="submitform" value="Gửi"/>
         <input type="button" id="btclose" value="&#88;"/>
     </form>
-    <section class="details flex">
-        <div class="cars">
-            <div class="car">
-                <img id="main-1" src="images/Black_1.jpg" alt="Xpander">
-                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                <p>Xe Mitsubishi Xpander 1.5 AT 2021</p>
-                <div class="gia">570.000.000<sup>vnd</sup></div>
-            </div>
-            <div class="thumb flex">
-                    <div><img src="images/Black_1.jpg" alt="Xpander" rel="1"></div>
-                    <div><img src="images/Black_2.jpg" alt="Xpander" rel="1"></div>
-                    <div><img src="images/Black_3.jpg" alt="Xpander" rel="1"></div>
-                    <div><img src="images/Black_4.jpg" alt="Xpander" rel="1"></div>
-                    <div><img src="images/Black_5.jpg" alt="Xpander" rel="1"></div>
-            </div>
-            <div class="colorCar flex">
-                <button rel="Black_" style="background-color: black;"></button>
-                <button rel="Red_" style="background-color: red;"></button>
-                <button rel="Brown_" style="background-color: brown;"></button>
-            </div>
-        </div>
-            <!--  -->
-            <div class="cars">  
-                   <div class="car">
-                <img id="main-2" src="images/BMWW_1.jpg" alt="BMW">
-                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                <p>BMW 5 Series 2024</p>
-                <div class="gia">1.979.000.000<sup>vnd</sup></div>
-            </div>
-            <div class="thumb flex">
-                <div><img src="images/BMWW_1.jpg" alt="BMW" rel="2"></div>
-                <div><img src="images/BMWW_2.jpg" alt="BMW" rel="2"></div>
-                <div><img src="images/BMWW_3.jpg" alt="BMW" rel="2"></div>
-                <div><img src="images/BMWW_4.jpg" alt="BMW" rel="2"></div>
-            </div>
-            <div class="colorCar flex">
-                <button rel="BMWW_" style="background-color: white;"></button>
-                <button rel="BMWBR_" style="background-color: brown;"></button>
-            </div>
-        </div>
-       
-            <!--  -->
-            <div class="cars"> 
-                    <div class="car">
-                    <img id="main-3" src="images/Carrera-Green_1.jpg" alt="CARR">
-                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                    <p>Xe Porsche 911 Carrera S 2023</p>
-                    <div class="gia">7.620.000.000<sup>vnd</sup></div>
+             
+    <section>
+        <ul class="tab flex">
+            <li class="active"><a href="#all">Tất cả xe</a></li>
+            <li ><a href="#duoi1ty">Dưới 1 tỷ </a></li>
+            <li><a href="#tren1ty">Trên 1 tỷ</a></li>
+        </ul>
+        <section class="tab-content active">
+            <section id="all">
+                <section class="details flex">
+                        <div class="cars">
+                            <div class="car">
+                                <img id="main-1" src="images/Black_1.jpg" alt="Xpander">
+                                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                <p>Xe Mitsubishi Xpander 1.5 AT 2021</p>
+                                <div class="gia">570.000.000<sup>vnd</sup></div>
+                            </div>
+                            <div class="thumb flex">
+                                    <div><img class="img-1" src="images/Black_1.jpg" alt="Xpander" rel="1"></div>
+                                    <div><img class="img-1" src="images/Black_2.jpg" alt="Xpander" rel="1"></div>
+                                    <div><img class="img-1" src="images/Black_3.jpg" alt="Xpander" rel="1"></div>
+                                    <div><img class="img-1" src="images/Black_4.jpg" alt="Xpander" rel="1"></div>
+                                    <div><img class="img-1" src="images/Black_5.jpg" alt="Xpander" rel="1"></div>
+                            </div>
+                            <div class="colorCar flex">
+                                <button name="Black_" rel="1" style="background-color: black;"></button>
+                                <button name="Red_" rel="1" style="background-color: red;"></button>
+                                <button name="Brown_" rel="1" style="background-color: brown;"></button>
+                            </div>
+                        </div>
+                            <!--  -->
+                            <div class="cars">  
+                                <div class="car">
+                                <img id="main-2" src="images/BMWW_1.jpg" alt="BMW">
+                                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                <p>BMW 5 Series 2024</p>
+                                <div class="gia">1.979.000.000<sup>vnd</sup></div>
+                            </div>
+                            <div id="img-2" class="thumb flex">
+                                <div><img src="images/BMWW_1.jpg" alt="BMW" rel="2"></div>
+                                <div><img src="images/BMWW_2.jpg" alt="BMW" rel="2"></div>
+                                <div><img src="images/BMWW_3.jpg" alt="BMW" rel="2"></div>
+                                <div><img src="images/BMWW_4.jpg" alt="BMW" rel="2"></div>
+                            </div>
+                            <div class="colorCar flex">
+                                <button name="BMWW_" rel="2" style="background-color: white;"></button>
+                                <button name="BMWBR_" rel="2" style="background-color: brown;"></button>
+                            </div>
+                        </div>
+                    
+                            <!--  -->
+                            <div class="cars"> 
+                                    <div class="car">
+                                    <img id="main-3" src="images/Carrera-Green_1.jpg" alt="CARR">
+                                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                    <p>Xe Porsche 911 Carrera S 2023</p>
+                                    <div class="gia">7.620.000.000<sup>vnd</sup></div>
+                                </div>
+                                <div id="img-3" class="thumb flex">
+                                    <div><img src="images/Carrera-Green_1.jpg" alt="CARR" rel="3"></div>
+                                    <div><img src="images/Carrera-Green_2.jpg" alt="CARR" rel="3"></div>
+                                    <div><img src="images/Carrera-Green_3.jpg" alt="CARR" rel="3"></div>
+                                    <div><img src="images/Carrera-Green_4.jpg" alt="CARR" rel="3"></div>
+                                    <div><img src="images/Carrera-Green_5.jpg" alt="CARR" rel="3"></div>
+                                </div>
+                                <div class="colorCar flex">
+                                    <button name="Carrera-Green_" rel="3" style="background-color: green;"></button>
+                                    <button name="Carrera-Red_" rel="3" style="background-color: red;"></button>
+                                </div>
+                            </div>
+                            
+                            <!--  -->
+                            <div class="cars">
+                                    <div class="car">
+                                    <img id="main-4" src="images/H-White_1.jpg" alt="H">
+                                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                    <p>Xe Honda Accord 2022</p>
+                                    <div class="gia">1.319.000.000<sup>vnd</sup></div>
+                                </div>
+                                <div id="img-4" class="thumb flex">
+                                    <div><img src="images/H-White_1.jpg" alt="H" rel="4"></div>
+                                    <div><img src="images/H-White_2.jpg" alt="H" rel="4"></div>
+                                    <div><img src="images/H-White_3.jpg" alt="H" rel="4"></div>
+                                </div>
+                                <div class="colorCar flex">
+                                    <button name="H-Black_" rel="4" style="background-color: black;"></button>
+                                    <button name="H-White_" rel="4" style="background-color: white;"></button>
+                                </div>
+                            </div>
+                            
+                            <!--  -->
+                            <div class="cars">
+                                        <div class="car">
+                                    <img id="main-5" src="images/Mec-Red_1.jpg" alt="MEC">
+                                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                    <p>Mercedes C200 Avantgarde 2022</p>
+                                    <div class="gia">1.709.000.000<sup>vnd</sup></div>
+                                </div>
+                                <div id="img-5" class="thumb flex">
+                                    <div><img src="images/Mec-Red_1.jpg" alt="MEC" rel="5"></div>
+                                    <div><img src="images/Mec-Red_2.jpg" alt="MEC" rel="5"></div>
+                                    <div><img src="images/Mec-Red_3.jpg" alt="MEC" rel="5"></div>
+                                    <div><img src="images/Mec-Red_4.jpg" alt="MEC" rel="5"></div>
+                                    <div><img src="images/Mec-Red_5.jpg" alt="MEC" rel="5"></div>
+                                </div>
+                                <div class="colorCar flex">
+                                    <button name="Mec-Red_" rel="5" style="background-color: red;"></button>
+                                    <button name="Mec-White_" rel="5" style="background-color: white;"></button>
+                                </div>
+                            </div>
+                    <div class="cars">
+                        <div class="car">
+                        <img id="main-6" src="images/A-Red_1.jpg" alt="A">
+                        <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                        <p>Audi Q3 2024</p>
+                        <div class="gia">1.890.000.000<sup>vnd</sup></div>
+                    </div>
+                    <div id="img-6" class="thumb flex">
+                        <div><img src="images/A-Red_1.jpg" alt="A" rel="6"></div>
+                        <div><img src="images/A-Red_2.jpg" alt="A" rel="6"></div>
+                        <div><img src="images/A-Red_3.jpg" alt="A" rel="6"></div>
+                        <div><img src="" alt=""></div>
+                        <div><img src="" alt=""></div>
+                    </div>
+                    <div class="colorCar flex">
+                        <button name="A-Red_" rel="6" style="background-color: red;"></button>
+                        <button name="A-White_" rel="6" style="background-color: white;"></button>
+                    </div>
                 </div>
-                <div class="thumb flex">
+                <!--  -->
+                <div class="cars">
+                    <div class="car">
+                        <img id="main-7" src="images/B-Black_1.jpg" alt="B">
+                        <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                        <p>BYD Atto 3 2024</p>
+                        <div class="gia">766.000.000<sup>vnd</sup></div>
+                    </div>
+                    <div id="img-7" class="thumb flex">
+                        <div><img src="images/B-Black_1.jpg" alt="B" rel="7"></div>
+                        <div><img src="images/B-Black_2.jpg" alt="B" rel="7"></div>
+                        <div><img src="images/B-Black_3.jpg" alt="B" rel="7"></div>
+                        <div><img src="" alt=""></div>
+                        <div><img src="" alt=""></div>
+                    </div>
+                    <div class="colorCar flex">
+                        <button name="B-Black_" rel="7" style="background-color: black;"></button>
+                        <button name="B-White_" rel="7" style="background-color: white;"></button>
+                    </div>
+                </div>
+                <div class="cars">
+                    <div class="car">
+                    <img id="main-8" src="images/Porsche-Blue_1.jpg" alt="por">
+                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                    <p>Porsche Macan GTS 2022</p>
+                    <div class="gia">5.340.000.000<sup>vnd</sup></div>
+                </div>
+                <div id="img-8" class="thumb flex">
+                    <div><img src="images/Porsche-Blue_1.jpg" alt="por" rel="8"></div>
+                    <div><img src="images/Porsche-Blue_2.jpg" alt="por" rel="8"></div>
+                    <div><img src="images/Porsche-Blue_3.jpg" alt="por" rel="8"></div>
+                    <div><img src="images/Porsche-Blue_4.jpg" alt="por" rel="8"></div>
+                    <div><img src="images/Porsche-Blue_5.jpg" alt="por" rel="8"></div>
+                </div>
+                    <div class="colorCar flex">
+                        <button name="Porsche-Blue_" rel="8" style="background-color: blue;"></button>
+                        <button name="Porsche-Green_" rel="8" style="background-color: green;"></button>
+                    </div>
+                </div>
+                <div class="cars">
+                    <div class="car">
+                        <img class="main-9" src="images/S-Black_1.jpg" alt="S">
+                        <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                        <p>Suzuki Swift GLX 2022</p>
+                        <div class="gia">560.000.000<sup>vnd</sup></div>
+                    </div>
+                    <div id="img-9" class="thumb flex">
+                        <div><img src="images/S-Black_1.jpg" alt="S" rel="9"></div>
+                        <div><img src="images/S-Black_2.jpg" alt="S" rel="9"></div>
+                        <div><img src="images/S-Black_3.jpg" alt="S" rel="9"></div>
+                    </div>
+                    <div class="colorCar flex">
+                        <button name="S-Black_" rel="9" style="background-color: black;"></button>
+                        <button name="S-Brown_" rel="9" style="background-color: brown;"></button>
+                        <button name="S-Red_" rel="9" style="background-color: red;"></button>
+                        <button name="S-White_" rel="9" style="background-color: white;"></button>
+                    </div>
+                </div>
+                </section>
+            </section>
+            <section id="duoi1ty">
+                <section class="details flex">
+                    <div class="cars">
+                                <div class="car">
+                                    <img id="main-1" src="images/Black_1.jpg" alt="Xpander">
+                                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                    <p>Xe Mitsubishi Xpander 1.5 AT 2021</p>
+                                    <div class="gia">570.000.000<sup>vnd</sup></div>
+                                </div>
+                                <div class="thumb flex">
+                                        <div><img class="img-1" src="images/Black_1.jpg" alt="Xpander" rel="1"></div>
+                                        <div><img class="img-1" src="images/Black_2.jpg" alt="Xpander" rel="1"></div>
+                                        <div><img class="img-1" src="images/Black_3.jpg" alt="Xpander" rel="1"></div>
+                                        <div><img class="img-1" src="images/Black_4.jpg" alt="Xpander" rel="1"></div>
+                                        <div><img class="img-1" src="images/Black_5.jpg" alt="Xpander" rel="1"></div>
+                                </div>
+                                <div class="colorCar flex">
+                                    <button name="Black_" rel="1" style="background-color: black;"></button>
+                                    <button name="Red_" rel="1" style="background-color: red;"></button>
+                                    <button name="Brown_" rel="1" style="background-color: brown;"></button>
+                                </div>
+                        </div>
+                        <div class="cars">
+                            <div class="car">
+                                <img id="main-7" src="images/B-Black_1.jpg" alt="B">
+                                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                <p>BYD Atto 3 2024</p>
+                                <div class="gia">766.000.000<sup>vnd</sup></div>
+                            </div>
+                            <div id="img-7" class="thumb flex">
+                                <div><img src="images/B-Black_1.jpg" alt="B" rel="7"></div>
+                                <div><img src="images/B-Black_2.jpg" alt="B" rel="7"></div>
+                                <div><img src="images/B-Black_3.jpg" alt="B" rel="7"></div>
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                            </div>
+                            <div class="colorCar flex">
+                                <button name="B-Black_" rel="7" style="background-color: black;"></button>
+                                <button name="B-White_" rel="7" style="background-color: white;"></button>
+                            </div>
+                        </div>
+                        <div class="cars">
+                            <div class="car">
+                                <img class="main-9" src="images/S-Black_1.jpg" alt="S">
+                                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                                <p>Suzuki Swift GLX 2022</p>
+                                <div class="gia">560.000.000<sup>vnd</sup></div>
+                            </div>
+                            <div id="img-9" class="thumb flex">
+                                <div><img src="images/S-Black_1.jpg" alt="S" rel="9"></div>
+                                <div><img src="images/S-Black_2.jpg" alt="S" rel="9"></div>
+                                <div><img src="images/S-Black_3.jpg" alt="S" rel="9"></div>
+                            </div>
+                            <div class="colorCar flex">
+                                <button name="S-Black_" rel="9" style="background-color: black;"></button>
+                                <button name="S-Brown_" rel="9" style="background-color: brown;"></button>
+                                <button name="S-Red_" rel="9" style="background-color: red;"></button>
+                                <button name="S-White_" rel="9" style="background-color: white;"></button>
+                            </div>
+                        </div>
+                </section>
+            </section>
+            <section id="tren1ty">
+                <section class="details flex">
+                    <div class="cars">  
+                           <div class="car">
+                        <img id="main-2" src="images/BMWW_1.jpg" alt="BMW">
+                        <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                        <p>BMW 5 Series 2024</p>
+                        <div class="gia">1.979.000.000<sup>vnd</sup></div>
+                    </div>
+                    <div id="img-2" class="thumb flex">
+                        <div><img src="images/BMWW_1.jpg" alt="BMW" rel="2"></div>
+                        <div><img src="images/BMWW_2.jpg" alt="BMW" rel="2"></div>
+                        <div><img src="images/BMWW_3.jpg" alt="BMW" rel="2"></div>
+                        <div><img src="images/BMWW_4.jpg" alt="BMW" rel="2"></div>
+                    </div>
+                    <div class="colorCar flex">
+                        <button name="BMWW_" rel="2" style="background-color: white;"></button>
+                        <button name="BMWBR_" rel="2" style="background-color: brown;"></button>
+                    </div>
+                </div>
+               
+                    <!--  -->
+                    <div class="cars"> 
+                            <div class="car">
+                <img id="main-3" src="images/Carrera-Green_1.jpg" alt="CARR">
+                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                <p>Xe Porsche 911 Carrera S 2023</p>
+                <div class="gia">7.620.000.000<sup>vnd</sup></div>
+            </div>
+            <div id="img-3" class="thumb flex">
                 <div><img src="images/Carrera-Green_1.jpg" alt="CARR" rel="3"></div>
                 <div><img src="images/Carrera-Green_2.jpg" alt="CARR" rel="3"></div>
                 <div><img src="images/Carrera-Green_3.jpg" alt="CARR" rel="3"></div>
                 <div><img src="images/Carrera-Green_4.jpg" alt="CARR" rel="3"></div>
                 <div><img src="images/Carrera-Green_5.jpg" alt="CARR" rel="3"></div>
-                </div>
-                <div class="colorCar flex">
-                    <button rel="Carrera-Green_" style="background-color: green;"></button>
-                    <button rel="Carrera-Red_" style="background-color: red;"></button>
-                </div>
-            </div>
-            
-            <!--  -->
-            <div class="cars">
-                    <div class="car">
-                    <img id="main-4" src="images/H-White_1.jpg" alt="H">
-                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                    <p>Xe Honda Accord 2022</p>
-                    <div class="gia">1.319.000.000<sup>vnd</sup></div>
-                </div>
-                <div class="thumb flex">
-                    <div><img src="images/H-White_1.jpg" alt="H" rel="4"></div>
-                    <div><img src="images/H-White_2.jpg" alt="H" rel="4"></div>
-                    <div><img src="images/H-White_3.jpg" alt="H" rel="4"></div>
-                </div>
-                <div class="colorCar flex">
-                    <button rel="H-Black_" style="background-color: black;"></button>
-                    <button rel="H-White_" style="background-color: white;"></button>
-                </div>
-            </div>
-            
-            <!--  -->
-            <div class="cars">
-                        <div class="car">
-                    <img id="main-5" src="images/Mec-Red_1.jpg" alt="MEC">
-                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                    <p>Mercedes C200 Avantgarde 2022</p>
-                    <div class="gia">1.709.000.000<sup>vnd</sup></div>
-                </div>
-                <div class="thumb flex">
-                    <div><img src="images/Mec-Red_1.jpg" alt="MEC" rel="5"></div>
-                    <div><img src="images/Mec-Red_2.jpg" alt="MEC" rel="5"></div>
-                    <div><img src="images/Mec-Red_3.jpg" alt="MEC" rel="5"></div>
-                    <div><img src="images/Mec-Red_4.jpg" alt="MEC" rel="5"></div>
-                    <div><img src="images/Mec-Red_5.jpg" alt="MEC" rel="5"></div>
-                </div>
-                <div class="colorCar flex">
-                    <button rel="Mec-Red_" style="background-color: red;"></button>
-                    <button rel="Mec-White_" style="background-color: white;"></button>
-                </div>
-            </div>
-            <!--  -->
-            <div class="cars">
-                    <div class="car">
-                    <img id="main-6" src="images/A-Red_1.jpg" alt="A">
-                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                    <p>Audi Q3 2024</p>
-                    <div class="gia">1.890.000.000<sup>vnd</sup></div>
-                </div>
-                <div class="thumb flex">
-                    <div><img src="images/A-Red_1.jpg" alt="A" rel="6"></div>
-                    <div><img src="images/A-Red_2.jpg" alt="A" rel="6"></div>
-                    <div><img src="images/A-Red_3.jpg" alt="A" rel="6"></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                </div>
-                <div class="colorCar flex">
-                    <button rel="A-Red_" style="background-color: red;"></button>
-                    <button rel="A-White_" style="background-color: white;"></button>
-                </div>
-            </div>
-            <!--  -->
-            <div class="cars">
-                <div class="car">
-                    <img id="main-7" src="images/B-Black_1.jpg" alt="B">
-                    <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                    <p>BYD Atto 3 2024</p>
-                    <div class="gia">766.000.000<sup>vnd</sup></div>
-                </div>
-                <div class="thumb flex">
-                    <div><img src="images/B-Black_1.jpg" alt="B" rel="7"></div>
-                    <div><img src="images/B-Black_2.jpg" alt="B" rel="7"></div>
-                    <div><img src="images/B-Black_3.jpg" alt="B" rel="7"></div>
-                    <div><img src="" alt=""></div>
-                    <div><img src="" alt=""></div>
-                </div>
-                <div class="colorCar flex">
-                    <button rel="B-Black_" style="background-color: black;"></button>
-                    <button rel="B-White_" style="background-color: white;"></button>
-                </div>
-            </div>
-            <div class="cars">
-                <div class="car">
-                <img id="main-8" src="images/Porsche-Blue_1.jpg" alt="por">
-                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                <p>Porsche Macan GTS 2022</p>
-                <div class="gia">5.340.000.000<sup>vnd</sup></div>
-            </div>
-            <div class="thumb flex">
-                <div><img src="images/Porsche-Blue_1.jpg" alt="por" rel="8"></div>
-                <div><img src="images/Porsche-Blue_2.jpg" alt="por" rel="8"></div>
-                <div><img src="images/Porsche-Blue_3.jpg" alt="por" rel="8"></div>
-                <div><img src="images/Porsche-Blue_4.jpg" alt="por" rel="8"></div>
-                <div><img src="images/Porsche-Blue_5.jpg" alt="por" rel="8"></div>
             </div>
             <div class="colorCar flex">
-                <button rel="Porsche-Blue_" style="background-color: blue;"></button>
-                <button rel="Porsche-Green_" style="background-color: green;"></button>
+                <button name="Carrera-Green_" rel="3" style="background-color: green;"></button>
+                <button name="Carrera-Red_" rel="3" style="background-color: red;"></button>
             </div>
         </div>
+        
+        <!--  -->
+        <div class="cars">
+                <div class="car">
+                <img id="main-4" src="images/H-White_1.jpg" alt="H">
+                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                <p>Xe Honda Accord 2022</p>
+                <div class="gia">1.319.000.000<sup>vnd</sup></div>
+            </div>
+            <div id="img-4" class="thumb flex">
+                <div><img src="images/H-White_1.jpg" alt="H" rel="4"></div>
+                <div><img src="images/H-White_2.jpg" alt="H" rel="4"></div>
+                <div><img src="images/H-White_3.jpg" alt="H" rel="4"></div>
+            </div>
+            <div class="colorCar flex">
+                <button name="H-Black_" rel="4" style="background-color: black;"></button>
+                <button name="H-White_" rel="4" style="background-color: white;"></button>
+            </div>
+        </div>
+        
+        <!--  -->
+        <div class="cars">
+                <div class="car">
+                <img id="main-5" src="images/Mec-Red_1.jpg" alt="MEC">
+                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                <p>Mercedes C200 Avantgarde 2022</p>
+                <div class="gia">1.709.000.000<sup>vnd</sup></div>
+            </div>
+            <div id="img-5" class="thumb flex">
+                <div><img src="images/Mec-Red_1.jpg" alt="MEC" rel="5"></div>
+                <div><img src="images/Mec-Red_2.jpg" alt="MEC" rel="5"></div>
+                <div><img src="images/Mec-Red_3.jpg" alt="MEC" rel="5"></div>
+                <div><img src="images/Mec-Red_4.jpg" alt="MEC" rel="5"></div>
+                <div><img src="images/Mec-Red_5.jpg" alt="MEC" rel="5"></div>
+            </div>
+            <div class="colorCar flex">
+                <button name="Mec-Red_" rel="5" style="background-color: red;"></button>
+                <button name="Mec-White_" rel="5" style="background-color: white;"></button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="cars">
+                <div class="car">
+                <img id="main-6" src="images/A-Red_1.jpg" alt="A">
+                <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                <p>Audi Q3 2024</p>
+                <div class="gia">1.890.000.000<sup>vnd</sup></div>
+            </div>
+            <div id="img-6" class="thumb flex">
+                <div><img src="images/A-Red_1.jpg" alt="A" rel="6"></div>
+                <div><img src="images/A-Red_2.jpg" alt="A" rel="6"></div>
+                <div><img src="images/A-Red_3.jpg" alt="A" rel="6"></div>
+                <div><img src="" alt=""></div>
+                <div><img src="" alt=""></div>
+            </div>
+            <div class="colorCar flex">
+                <button name="A-Red_" rel="6" style="background-color: red;"></button>
+                <button name="A-White_" rel="6" style="background-color: white;"></button>
+            </div>
+        </div>
+        <!--  -->
+       
         <div class="cars">
             <div class="car">
-                <img class="main-9" src="images/S-Black_1.jpg" alt="S">
-                <button id="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
-                <p>Suzuki Swift GLX 2022</p>
-                <div class="gia">560.000.000<sup>vnd</sup></div>
-            </div>
-            <div class="thumb flex">
-                <div><img src="images/S-Black_1.jpg" alt="S" rel="9"></div>
-                <div><img src="images/S-Black_2.jpg" alt="S" rel="9"></div>
-                <div><img src="images/S-Black_3.jpg" alt="S" rel="9"></div>
-            </div>
-            <div class="colorCar flex">
-                <button rel="S-Red_" style="background-color: red;"></button>
-                <button rel="S-White_" style="background-color: white;"></button>
-            </div>
+            <img id="main-8" src="images/Porsche-Blue_1.jpg" alt="por">
+            <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+            <p>Porsche Macan GTS 2022</p>
+            <div class="gia">5.340.000.000<sup>vnd</sup></div>
         </div>
+        <div id="img-8" class="thumb flex">
+            <div><img src="images/Porsche-Blue_1.jpg" alt="por" rel="8"></div>
+            <div><img src="images/Porsche-Blue_2.jpg" alt="por" rel="8"></div>
+            <div><img src="images/Porsche-Blue_3.jpg" alt="por" rel="8"></div>
+            <div><img src="images/Porsche-Blue_4.jpg" alt="por" rel="8"></div>
+            <div><img src="images/Porsche-Blue_5.jpg" alt="por" rel="8"></div>
+        </div>
+        <div class="colorCar flex">
+            <button name="Porsche-Blue_" rel="8" style="background-color: blue;"></button>
+            <button name="Porsche-Green_" rel="8" style="background-color: green;"></button>
+        </div>
+    </div>
+        </section>
     </section>
+</section>
+   
    </main>
    <footer>
     <h3>CỬA HÀNG Ô TÔ T&B</h3>

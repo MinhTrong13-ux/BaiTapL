@@ -501,6 +501,24 @@ footer{
 .showForm{
     display: block !important;
 }
+.active {
+    background-color: white !important;
+    box-shadow: 3px 2px gray;
+}
+.tab-content > section{
+    padding: 5px;
+}
+.tab>li>a{
+    display: block;
+    padding: 1.5rem;
+    border-right: 2px solid black;
+    color: white;
+    text-decoration: none;
+    color: burlywood;
+}
+.tab>li{
+    background-color: darkblue;
+}
 /* CSS BẢNG GIÁ */
 /* table{
     border: 2px solid black;
