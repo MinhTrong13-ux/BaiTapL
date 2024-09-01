@@ -38,15 +38,13 @@ window.onload=function()
     };
     
     let search = document.querySelector("input[type=search]");
-    search.onchange = function() {
+    search.onchange = function(){
         // xóa hieu ung
         let tmps = document.querySelectorAll(".car");
         for (let t of tmps)
             t.classList.remove('doiMauBorder');
-
         // gan hieu ung khi tim thay
         let txt = this.value;
-
         let products = document.querySelectorAll(".car>P ");
         for (let p of products)
             if (p.innerText.includes(txt) === true)
@@ -60,7 +58,6 @@ window.onload=function()
             form.classList.add('showForm');
         }
     };
-    let childform = document.getElementsByClassName(".childform");
     let submitform = document.getElementById("submitform");
     submitform.onclick=function(){
         form.style.display='none';
@@ -71,7 +68,23 @@ window.onload=function()
         form.classList.toggle('showForm');
         };
     };
-}
+        let process = document.getElementById("addProcess");
+        let productsDiv = document.querySelector(".products");
+        process.onclick = function(){
+            let namekg = document.getElementById("namekg").value;
+            let giakg = document.getElementById("giakg").value;
+            let anhkg = document.getElementById("anhkg").value;
+            let h = `<div class="product">
+                        <div>
+                            <img src="${anhkg}" alt="Xe ky gui">
+                            <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
+                            <p>${namekg}</p>
+                            <div>${giakg}<sup>vnd</sup></div>  
+                            </div>
+                    </div>`
+             productsDiv.innerHTML = h + productsDiv.innerHTML;
+    };  
+};
 $(document).ready(function() {
     // co dinh menu
     $(window).scroll(function() {
@@ -113,5 +126,4 @@ $(document).ready(function() {
             scrollTop:$(h).prop("offsetTop")+"px"
         },1000)
     });
-})
-
+});

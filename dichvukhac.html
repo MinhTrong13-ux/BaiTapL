@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="baiTapLon.js"></script>
+    <link href="BaitapLon.css" rel="stylesheet">
+    <link  href="mobile.css" rel="stylesheet" media="screen and (max-width: 500px)"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/LOGO.jpg"/>
+    <title>Dịch Vụ Khác</title>
+</head>
+<body>
+    <button class="back-to-top"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+    <header class="flex">
+        <img src="images/LOGO.jpg" alt="LOGO Cửa Hàng">
+        <h1>CỬA HÀNG Ô TÔ T&B</h1>
+        <div></div>
+    </header>
+    <nav>
+        <ul class="menu flex">
+            <li class="mxbx"><a href="index.html">Trang Chủ</a>
+                <ul class="sub-menu">
+                    <li><a href="#mbs">Mua xe</a></li>
+                    <li><a href="#bxs">Bán xe</a></li>
+                </ul>
+            </li>
+            <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+            <li><a href="SanPham.html">Sản Phẩm</a></li>
+            <li><a href="BangGia.html">Bảng Giá</a></li>
+            <li><a href="dichvukhac.html">Dịch Vụ Khác</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>KÝ GỬI XE</h1>
+            <div>
+                <span>Tên xe:</span>
+                <input type="text" id="namekg" placeholder="Nhập tên xe..."/>
+            </div>
+            <div>
+                <span>Giá xe cần bán:</span>
+                <input type="number" id="giakg" placeholder="Nhập giá xe..."/>
+            </div>
+            <div>
+                <span>Link ảnh xe:</span>
+                <input type="text" id="anhkg" placeholder="Ảnh xe ký gửi..."/>
+            </div>
+            <input type="button" value="Ký Gửi Xe" id="addProcess"/>
+        </section>
+        <section class="products flex">
+
+        </section>
+    </main>
+</body>
+</html>
