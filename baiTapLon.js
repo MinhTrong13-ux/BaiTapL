@@ -17,7 +17,7 @@ window.onload=function()
         let pos2 =this.getAttribute("rel");
         let main2 = document.getElementById(`main-${pos2}`);
         let label = this.getAttribute("name");
-        let img2=document.querySelectorAll(`img-${pos2}`);
+        let img2=document.querySelectorAll(`.img-${pos2}`);
         //let images2 = document.querySelectorAll("img2");
         main2.src=`images/${label}1.jpg`;
         for(let i = 0;i<img2.length;i++)
@@ -77,7 +77,6 @@ window.onload=function()
             let h = `<div class="product">
                         <div>
                             <img src="${anhkg}" alt="Xe ky gui">
-                            <button class="btbuy"><span><i class="fa-solid fa-cart-shopping"></i></span> Đặt cọc ngay</button>
                             <p>${namekg}</p>
                             <div>${giakg}<sup>vnd</sup></div>  
                             </div>
