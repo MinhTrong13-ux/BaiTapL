@@ -2,7 +2,6 @@ window.onload=function()
 {
     let images = document.querySelectorAll(".thumb img");
     let buttons = document.querySelectorAll(".colorCar > button");
-    let arr =[0,1,2,3,4];
     //Doi hinh
     for(let im of images)
     im.onclick=function()
@@ -18,7 +17,6 @@ window.onload=function()
         let main2 = document.getElementById(`main-${pos2}`);
         let label = this.getAttribute("name");
         let img2=document.querySelectorAll(`.img-${pos2}`);
-        //let images2 = document.querySelectorAll("img2");
         main2.src=`images/${label}1.jpg`;
         for(let i = 0;i<img2.length;i++)
             img2[i].src=`images/${label}${i+1}.jpg`;
