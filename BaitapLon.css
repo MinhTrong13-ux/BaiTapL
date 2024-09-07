@@ -538,13 +538,3 @@ td{
     border: 2px solid black;
     color: black;
 }
- /*FormDatCoc*/
-.froms{
-    background: rgb(228, 239, 249);
-    border: 1px solid rgb(208, 199, 199);
-    border-radius: 10px;
-    padding: 1rem 1rem 1rem 1rem;
-}
-.from{
-    border-radius: 10px;
-}
