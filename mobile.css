@@ -66,31 +66,58 @@ nav>ul>li>a:hover{
 }
 /*INDEX*/
 .ca1{
-    width:99%;
-    height:150px
+    width:90%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ca2{
-    width:99%;
-    height:150px
+    width:90%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ca3{
-    width:99%;
-    height:150px
+    width:90%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .ca4{
-    width:99%;
-    height:150px
+    width:90%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-
-
-
-
-
-
-
-
+.selects{
+    width:100%;
+}
+.logos{
+    width:18.7%;
+    height: 100%;
+    margin-bottom: 3px;
+}
+.left{
+    width: 100%;
+}
+.sub{
+    width: 40% !important;
+}
+.sub>a{
+    text-align: center;
+}
+li>button{
+    width: 40% !important;
+}
+.right{
+    width: 100%;
+}
+/*GIOI THIEU*/
+.ghichu img{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 70%;
+}
 /* CSS SAN PHAM */
 .search{
     margin-bottom: 10px;
