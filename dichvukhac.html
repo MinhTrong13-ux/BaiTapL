@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="dichvukygui.js"></script>
+    <script src="baiTapLon.js"></script>
     <link href="BaitapLon.css" rel="stylesheet">
     <link  href="mobile.css" rel="stylesheet" media="screen and (max-width: 500px)"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
@@ -13,7 +14,7 @@
 </head>
 <body>
     <button class="back-to-top"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
-    <header class="flex">
+    <header class="doimaukhung flex">
         <img src="images/LOGO.jpg" alt="LOGO Cửa Hàng">
         <h1>CỬA HÀNG Ô TÔ T&B</h1>
         <div></div>
@@ -35,22 +36,29 @@
     <main>
         <section>
             <h1>KÝ GỬI XE</h1>
-            <div>
-                <span>Tên xe:</span>
-                <input type="text" id="namekg" placeholder="Nhập tên xe..."/>
+            <h3>Vui lòng nhập mật khẩu thành viên để sử dụng dịch vụ ký gửi xe.</h3>
+            <input id="password" type="password"  placeholder="Nhập mật khẩu..."/>
+            <input id="check" type="button" value="Kiểm tra">
+            <div id="kyguixe">
+                <div>
+                    <span>Tên xe:</span>
+                    <input type="text" id="namekg" placeholder="Nhập tên xe..."/>
+                </div>
+                <div>
+                    <span>Giá xe cần bán:</span>
+                    <input type="number" id="giakg" placeholder="Nhập giá xe..."/>
+                </div>
+                <div>
+                    <span>Link ảnh xe:</span>
+                    <input type="text" id="anhkg" placeholder="Ảnh xe ký gửi..."/>
+                </div>
+                <input id="addProcess" type="button" value="Ký Gửi Xe" />
             </div>
-            <div>
-                <span>Giá xe cần bán:</span>
-                <input type="number" id="giakg" placeholder="Nhập giá xe..."/>
-            </div>
-            <div>
-                <span>Link ảnh xe:</span>
-                <input type="text" id="anhkg" placeholder="Ảnh xe ký gửi..."/>
-            </div>
-            <input id="addProcess" type="button" value="Ký Gửi Xe" />
         </section>
-        <section class="products flex">
-            <div class="product"></div>
+        <section class="flex">
+            <div class="products">
+                <div class="product"></div>
+            </div>
         </section>
     </main>
 </body>

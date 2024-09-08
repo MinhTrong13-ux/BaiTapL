@@ -424,7 +424,6 @@ footer{
     position: absolute;
     top:0;
     left:0;
-    background-color: gold;
     color: white;
     border-radius: 10px 0;
 }
@@ -439,6 +438,20 @@ footer{
 .thumb{
     border: 2px solid darkblue;
 }
+@keyframes doimau2{
+    0%{
+        border-left: 5px solid red;
+    }
+    25%{
+        border-top: 5px solid green;
+    }
+    50%{
+        border-right: 5px solid blue;
+    }
+    75%{
+        border-bottom: 5px solid gold;
+    }
+}
 @keyframes doimau{
     0%{
         background-color: gold;
@@ -451,6 +464,9 @@ footer{
     }
     75%{
         background-color: green;
+    }
+    100%{
+        background-color: yellow;
     }
 }
 @keyframes mauborder{
@@ -466,6 +482,9 @@ footer{
 }
 .gia{
     animation: doimau 2s infinite;
+}
+.doimaukhung{
+    animation: doimau2 2s infinite;
 }
 .btbuy{
     background-color: blue;
@@ -537,4 +556,35 @@ thead th{
 td{
     border: 2px solid black;
     color: black;
+}
+/* CSS DICH VU KHAC */
+.products{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    background: linear-gradient(blue,white);
+    border: 3px solid white;
+}
+.anhkg{
+    width: 100%;
+}
+.products:hover{
+    box-shadow: 0 4px 8px 3px;
+    transform: translateY(-10px);
+}
+.product{
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.gia2{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: gold;
+    color: white;
+    border-radius: 10px 0;
+}
+#kyguixe{
+    display: none;
 }
