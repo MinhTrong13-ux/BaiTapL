@@ -11,22 +11,21 @@ window.addEventListener('load', function()
                         <h2>${namekg}</h2>
                         <div class="gia2">${giakg}<sup>vnd</sup></div>  
                     </div>
-                    </div>
+                </div>
                 `
              let first = document.querySelector(".products:first-child");
              first.insertAdjacentHTML("beforebegin", h);
     }; 
-    let password =document.getElementById("password").value;
     let check = document.getElementById("check");
     let kyguixe = document.getElementById("kyguixe");
+    const pass = "123";
     check.onclick=function()
     {
-        if(password ==='123')
-        {
+        let password =document.getElementById("password").value;
+        if(password === pass){
             kyguixe.style.display='block';
-        }
-        else{
-            alert("Mật khẩu sai mời nhập lại!");
+        }else{
+            alert("Mật khẩu không chính xác!")
         }
     };
 })

@@ -57,8 +57,24 @@ window.onload=function()
         }
     };
     let submitform = document.getElementById("submitform");
+    let kt ="";
     submitform.onclick=function(){
-        form.style.display='none';
+        let nameform = document.getElementById("nameform").value;
+        let emailform = document.getElementById("emailform").value;
+        let sdt = document.getElementById("sdt").value;
+        let cccd = document.getElementById("cccd").value;
+        let dc = document.getElementById("dc").value;
+        let tienso = document.getElementById("tienso").value;
+        let tienchu = document.getElementById("tienchu").value;
+        let date = document.getElementById("date").value;
+        if(nameform !== kt && emailform !== kt && sdt !== kt && cccd !== kt && dc !== kt && tienso !== kt && tienchu !== kt && date!==kt)
+        {
+           form.style.display='none';
+           alert("Ban da dat coc thanh cong");
+        }
+        else{
+            alert("Các ô cần được điền đầy đủ thông tin!")
+        }
     };
     let btclose = document.getElementById("btclose");
     btclose.onclick=function(){
@@ -66,6 +82,22 @@ window.onload=function()
         form.classList.toggle('showForm');
         };
     }; 
+    let checksale = document.getElementById("checksale");
+    let discout = "sieusale";
+    let giasanpham = document.querySelectorAll(".gia");
+    checksale.onclick=function()
+    {
+        let sale = document.getElementById("sale").value;
+        if(sale === discout){
+            for(let price of giasanpham )
+                if (!isNaN(price)) {
+                    price.innerHTML=price-5000000;
+                }
+        }else{
+            alert("Mã giảm giá của bạn không tồn tại!");
+        }
+
+    };
 };
 $(document).ready(function() {
     // co dinh menu

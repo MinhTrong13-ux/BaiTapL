@@ -36,6 +36,11 @@
     <section class="search">
         <input type="search" placeholder="Tìm Kiếm Sản Phẩm..."/>
     </section>
+    <section>
+        <div style="color: red;">Nhập mã giảm giá nếu có:</div>
+        <span><input id="sale" type="text" placeholder="Nhập mã giảm giá..."/></span> 
+        <span><input id="checksale" type="button" value="Kiểm tra"/></span>
+    </section>
      <form id="form">
         <table>
             <thead>
@@ -48,35 +53,35 @@
                 <td>
                     <h5>Họ và tên:</h5>
                 </td>
-                <td><input class="childform" title="Vui lòng điền họ và tên..." type="text" placeholder="VD:Nguyễn Văn A" required/></td>
+                <td><input id="nameform" title="Vui lòng điền họ và tên..." type="text" placeholder="VD:Nguyễn Văn A" required/></td>
               </tr>
               <tr>
                 <td><h5>Email:</h5></td>
-                <td><input class="childform" title="Vui lòng điền email ..." type="email" placeholder="VD:danh51340@gmail.com" required/></td>
+                <td><input id="emailform" title="Vui lòng điền email ..." type="email" placeholder="VD:danh51340@gmail.com" required/></td>
               </tr>
               <tr>
                 <td><h5>Số điện thoại:</h5></td>
-                <td><input class="childform" title="Vui lòng điền số điện thoại..." type="number" placeholder="VD:0356275666" required/></td>
+                <td><input id="sdt" title="Vui lòng điền số điện thoại..." type="number" placeholder="VD:0356275666" required/></td>
               </tr>
               <tr>
                 <td><h5>Số CCCD:</h5></td>
-                <td><input class="childform" title="Vui lòng nhập số CCCD..." type="number" placeholder="VD:09120500082" required/></td>
+                <td><input id="cccd" title="Vui lòng nhập số CCCD..." type="number" placeholder="VD:09120500082" required/></td>
               </tr>
               <tr>
                 <td>Địa chỉ:</td>
-                <td><input class="childform" title="Vui lòng nhập địa chỉ..." type="text" placeholder="VD:Huyện Nhà Bè,TP.HCM" required/></td>
+                <td><input id="dc" title="Vui lòng nhập địa chỉ..." type="text" placeholder="VD:Huyện Nhà Bè,TP.HCM" required/></td>
               </tr>
               <tr>
                 <td>Ngày đặt cọc:</td>
-                <td><input class="childform" type="date" required/></td>
+                <td><input id="date" type="date" required/></td>
               </tr>
               <tr>
                 <td>Số tiền đặt cọc(bằng số):</td>
-                <td><input class="childform" title="Nhập số tiền bạn muốn đặt cọc.." type="number" placeholder="50.000.000" required/></td>
+                <td><input id="tienso" title="Nhập số tiền bạn muốn đặt cọc.." type="number" placeholder="50.000.000" required/></td>
               </tr>
               <tr>
                 <td>Số tiền đặt cọc(bằng chữ):</td>
-                <td><input class="childform" title="Nhập số tiền bạn muốn đặt cọc.." type="text" placeholder="VD: Năm mươi triệu"  required/></td>
+                <td><input id="tienchu" title="Nhập số tiền bạn muốn đặt cọc.." type="text" placeholder="VD: Năm mươi triệu"  required/></td>
               </tr>  
             </tbody>
         </table>

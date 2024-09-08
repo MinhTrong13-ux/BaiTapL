@@ -392,6 +392,7 @@ footer{
     display: none;
     position: relative;
     z-index: 1000;
+    width: 100%;
 }
 #btclose{
     color: red;
@@ -438,20 +439,6 @@ footer{
 .thumb{
     border: 2px solid darkblue;
 }
-@keyframes doimau2{
-    0%{
-        border-left: 5px solid red;
-    }
-    25%{
-        border-top: 5px solid green;
-    }
-    50%{
-        border-right: 5px solid blue;
-    }
-    75%{
-        border-bottom: 5px solid gold;
-    }
-}
 @keyframes doimau{
     0%{
         background-color: gold;
@@ -484,7 +471,10 @@ footer{
     animation: doimau 2s infinite;
 }
 .doimaukhung{
-    animation: doimau2 2s infinite;
+    border-left:5px solid red ;
+    border-top:5px solid green ;
+    border-right:5px solid blue ;
+    border-bottom:5px solid gold ;
 }
 .btbuy{
     background-color: blue;
@@ -557,6 +547,13 @@ td{
     border: 2px solid black;
     color: black;
 }
+#TS-1,#TS-2,#TS-3,#TS-4,#TS-5,#TS-6,#TS-7,#TS-8,#TS-9{
+    display: none;
+    margin-top: 10px;
+}
+.thongso img{
+    width: 60%;
+}
 /* CSS DICH VU KHAC */
 .products{
     width: 25%;
@@ -564,6 +561,7 @@ td{
     padding: 5px;
     background: linear-gradient(blue,white);
     border: 3px solid white;
+    position: relative;
 }
 .anhkg{
     width: 100%;
