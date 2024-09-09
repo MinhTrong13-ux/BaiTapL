@@ -19,13 +19,31 @@ window.addEventListener('load', function()
     let check = document.getElementById("check");
     let kyguixe = document.getElementById("kyguixe");
     const pass = "123";
+    let thongtinkygui=document.getElementById("thongtinkygui");
+    let passw = this.document.getElementById("password");
+    let number = 3;
     check.onclick=function()
     {
         let password =document.getElementById("password").value;
         if(password === pass){
             kyguixe.style.display='block';
         }else{
-            alert("Mật khẩu không chính xác!")
+            number=number-1;
+            if(number === 0)
+            {
+                passw.style.display='none';
+                check.style.display='none';
+                thongtinkygui.innerHTML="Nhập mật khẩu thất bại vui lòng liên hệ cửa hàng theo thông tin bên dưới.";
+                alert("Xin lỗi dường như bạn đang gặp vấn đề về mật khẩu của mình vui lòng liên hệ với chúng tôi!");
+            }
+            if(number === 2)
+            {
+            alert("Mật khẩu không chính xác! Bạn còn 2 lần nhập.");
+            }
+            if(number === 1)
+            {
+                alert("Mật khẩu không chính xác! Bạn còn 1 lần nhập.");
+            }
         }
     };
 })
