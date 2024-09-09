@@ -70,7 +70,7 @@ window.onload=function()
         if(nameform !== kt && emailform !== kt && sdt !== kt && cccd !== kt && dc !== kt && tienso !== kt && tienchu !== kt && date!==kt)
         {
            form.style.display='none';
-           alert("Ban da dat coc thanh cong");
+           alert("Bạn đã đặt cọc thành công!");
         }
         else{
             alert("Các ô cần được điền đầy đủ thông tin!")
@@ -83,17 +83,21 @@ window.onload=function()
         };
     }; 
     let checksale = document.getElementById("checksale");
-    let discout = "sieusale";
-    let giasanpham = document.querySelectorAll(".gia");
+    let discount = "sieusale";
     checksale.onclick=function()
     {
         let sale = document.getElementById("sale").value;
-        if(sale === discout){
-            for(let price of giasanpham )
-                if (!isNaN(price)) {
-                    price.innerHTML=price-5000000;
-                }
-        }else{
+        if(sale === discount){
+            let gia = document.querySelectorAll(".car");
+            for(let price of gia )
+            {
+               let pricediscount = parseFloat(price.getAttribute("value"));
+                    pricediscount-=10000000;
+                    price.querySelector('.gia').innerText=pricediscount+` VNĐ`;
+            }
+            alert("Tất cả sản phẩm đã được giảm 10 triệu!");
+        }
+        else{
             alert("Mã giảm giá của bạn không tồn tại!");
         }
 

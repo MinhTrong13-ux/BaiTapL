@@ -573,7 +573,6 @@ td{
 .product{
     position: relative;
     padding: 5px;
-    box-sizing: border-box;
 }
 .gia2{
     position: absolute;

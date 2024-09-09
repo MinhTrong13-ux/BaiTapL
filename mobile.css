@@ -262,3 +262,9 @@ li>button{
 .tab>li{
     background-color: darkblue;
 }
+#Banggia>*{
+    font-size: 10px;
+}
+.products{
+    width: 50%;
+}
